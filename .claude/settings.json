@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(Remove-Item -Recurse -Force node_modules, package-lock.json -ErrorAction SilentlyContinue)",
+      "Read(//c/Users/COMTEL/.claude/projects/c--Users-COMTEL-OneDrive-Desktop-Client-Projects-BMS-Cars-Rent/memory/**)",
+      "PowerShell(nvm version 2>$null)",
+      "PowerShell(if \\(-not $?\\) { \"nvm not found\" })",
+      "PowerShell(nvm install 22.12.0)",
+      "PowerShell(nvm use 22.12.0)",
+      "PowerShell(nvm list)",
+      "PowerShell(Uninstall-Package -Force)",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\", \"User\"\\); node -v)",
+      "Bash(dir /s /b)",
+      "Bash(powershell -Command \"Get-ChildItem -Directory\")",
+      "Bash(powershell -Command \"Get-ChildItem -File\")",
+      "Bash(powershell -Command \"Get-ChildItem .claude -Recurse\")",
+      "Bash(powershell -Command \"Get-ChildItem\")",
+      "Bash(dir \"c:\\\\Users\\\\COMTEL\\\\OneDrive\\\\Desktop\\\\Client Projects\\\\BMS Cars Rent\")",
+      "PowerShell(cd \"c:\\\\Users\\\\COMTEL\\\\OneDrive\\\\Desktop\\\\Client Projects\\\\BMS Cars Rent\\\\frontend\"; $env:NODE_TLS_REJECT_UNAUTHORIZED='0'; npm install qrcode.react 2>&1)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\COMTEL\\.claude\\projects\\c--Users-COMTEL-OneDrive-Desktop-Client-Projects-BMS-Cars-Rent\\memory"
+    ]
+  }
+}
