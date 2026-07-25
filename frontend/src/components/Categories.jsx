@@ -1,5 +1,11 @@
 import { useState, useRef } from "react";
 import { categories } from "../data/cars";
+import suvImg from "../assets/categories/suv.jpg";
+import berlineImg from "../assets/categories/berline.jpg";
+import sportImg from "../assets/categories/sport.jpg";
+import luxeImg from "../assets/categories/luxe.jpg";
+import electriqueImg from "../assets/categories/electrique.jpg";
+import pickupImg from "../assets/categories/pickup.jpg";
 import "./Categories.css";
 
 const categoryDetails = {
@@ -8,36 +14,42 @@ const categoryDetails = {
     count: 38,
     gradient: "linear-gradient(135deg, #1a3a2a 0%, #0d2015 100%)",
     accent: "#2a8a5a",
+    image: suvImg,
   },
   berline: {
     desc: "Confortables et économiques pour les trajets quotidiens en ville.",
     count: 72,
     gradient: "linear-gradient(135deg, #1a2a3a 0%, #0d1525 100%)",
     accent: "#2a5a8a",
+    image: berlineImg,
   },
   sport: {
     desc: "Performances élevées pour des sensations de conduite pures.",
     count: 24,
     gradient: "linear-gradient(135deg, #3a1a1a 0%, #250d0d 100%)",
     accent: "#e01010",
+    image: sportImg,
   },
   luxe: {
     desc: "Confort premium et élégance pour les clients les plus exigeants.",
     count: 19,
     gradient: "linear-gradient(135deg, #2a2010 0%, #1a1508 100%)",
     accent: "#d4a017",
+    image: luxeImg,
   },
   electrique: {
     desc: "Véhicules écologiques et modernes. Zéro émission, pleine puissance.",
     count: 15,
     gradient: "linear-gradient(135deg, #0a2a3a 0%, #061520 100%)",
     accent: "#0ea5e9",
+    image: electriqueImg,
   },
   pickup: {
     desc: "Robustes et polyvalents, idéaux pour les charges et les terrains difficiles.",
     count: 12,
     gradient: "linear-gradient(135deg, #1a1a0a 0%, #100f06 100%)",
     accent: "#8a7a2a",
+    image: pickupImg,
   },
 };
 

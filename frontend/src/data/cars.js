@@ -1,3 +1,19 @@
+import daciaDuster from '../assets/cars/dacia-duster.png';
+import toyotaRav4 from '../assets/cars/toyota-rav4.jpg';
+import hyundaiTucson from '../assets/cars/hyundai-tucson.png';
+import kiaSportage from '../assets/cars/kia-sportage.jpg';
+import toyotaCorolla from '../assets/cars/toyota-corolla.jpg';
+import daciaLogan from '../assets/cars/dacia-logan.jpg';
+import hyundaiElantra from '../assets/cars/hyundai-elantra.jpg';
+import renaultSymbol from '../assets/cars/renault-symbol.jpg';
+import vwGolfGti from '../assets/cars/vw-golf-gti.jpg';
+import renaultMeganeRs from '../assets/cars/renault-megane-rs.jpg';
+import mercedesClasseC from '../assets/cars/mercedes-classe-c.jpg';
+import bmwSerie3 from '../assets/cars/bmw-serie3.jpg';
+import renaultZoe from '../assets/cars/renault-zoe.jpg';
+import toyotaHilux from '../assets/cars/toyota-hilux.jpg';
+import mitsubishiL200 from '../assets/cars/mitsubishi-l200.jpg';
+
 export const categories = [
   { id: 'suv', label: 'SUV' },
   { id: 'berline', label: 'Berline' },
@@ -17,7 +33,7 @@ export const cars = [
     transmission: 'Manuelle',
     fuel: 'Essence',
     hp: 115,
-    image: null,
+    image: daciaDuster,
     color: '#1a1a2e',
     badge: 'Populaire',
     availability: [true, true, false, true, true],
@@ -31,7 +47,7 @@ export const cars = [
     transmission: 'Automatique',
     fuel: 'Hybride',
     hp: 218,
-    image: null,
+    image: toyotaRav4,
     color: '#16213e',
     badge: 'Meilleur Prix',
     availability: [true, false, true, true, true],
@@ -45,7 +61,7 @@ export const cars = [
     transmission: 'Automatique',
     fuel: 'Diesel',
     hp: 185,
-    image: null,
+    image: hyundaiTucson,
     color: '#0f3460',
     badge: null,
     availability: [false, true, true, true, false],
@@ -59,7 +75,7 @@ export const cars = [
     transmission: 'Automatique',
     fuel: 'Diesel',
     hp: 200,
-    image: null,
+    image: kiaSportage,
     color: '#1a1015',
     badge: null,
     availability: [true, true, true, false, true],
@@ -73,7 +89,7 @@ export const cars = [
     transmission: 'Automatique',
     fuel: 'Essence',
     hp: 132,
-    image: null,
+    image: toyotaCorolla,
     color: '#1a0a0a',
     badge: 'Populaire',
     availability: [true, true, true, false, true],
@@ -87,7 +103,7 @@ export const cars = [
     transmission: 'Manuelle',
     fuel: 'Essence',
     hp: 90,
-    image: null,
+    image: daciaLogan,
     color: '#2a0a0a',
     badge: 'Meilleur Prix',
     availability: [true, true, true, true, true],
@@ -101,7 +117,7 @@ export const cars = [
     transmission: 'Automatique',
     fuel: 'Essence',
     hp: 120,
-    image: null,
+    image: hyundaiElantra,
     color: '#0a1a0a',
     badge: null,
     availability: [false, true, true, true, true],
@@ -115,7 +131,7 @@ export const cars = [
     transmission: 'Manuelle',
     fuel: 'Essence',
     hp: 105,
-    image: null,
+    image: renaultSymbol,
     color: '#101a0a',
     badge: null,
     availability: [true, false, true, true, true],
@@ -129,7 +145,7 @@ export const cars = [
     transmission: 'Automatique',
     fuel: 'Essence',
     hp: 245,
-    image: null,
+    image: vwGolfGti,
     color: '#1a1a0a',
     badge: 'Nouveau',
     availability: [true, false, false, true, true],
@@ -143,7 +159,7 @@ export const cars = [
     transmission: 'Manuelle',
     fuel: 'Essence',
     hp: 280,
-    image: null,
+    image: renaultMeganeRs,
     color: '#0a0a1a',
     badge: null,
     availability: [true, true, false, true, false],
@@ -157,7 +173,7 @@ export const cars = [
     transmission: 'Automatique',
     fuel: 'Diesel',
     hp: 220,
-    image: null,
+    image: mercedesClasseC,
     color: '#1a0a1a',
     badge: 'Luxe',
     availability: [false, false, true, true, true],
@@ -171,7 +187,7 @@ export const cars = [
     transmission: 'Automatique',
     fuel: 'Essence',
     hp: 258,
-    image: null,
+    image: bmwSerie3,
     color: '#0a1a1a',
     badge: 'Premium',
     availability: [true, false, true, false, true],
@@ -185,7 +201,7 @@ export const cars = [
     transmission: 'Automatique',
     fuel: 'Électrique',
     hp: 135,
-    image: null,
+    image: renaultZoe,
     color: '#0a1520',
     badge: 'Éco',
     availability: [true, true, true, true, false],
@@ -199,7 +215,7 @@ export const cars = [
     transmission: 'Manuelle',
     fuel: 'Diesel',
     hp: 150,
-    image: null,
+    image: toyotaHilux,
     color: '#0a1510',
     badge: null,
     availability: [true, true, true, false, true],
@@ -213,7 +229,7 @@ export const cars = [
     transmission: 'Manuelle',
     fuel: 'Diesel',
     hp: 150,
-    image: null,
+    image: mitsubishiL200,
     color: '#101520',
     badge: 'Populaire',
     availability: [false, true, true, true, true],
