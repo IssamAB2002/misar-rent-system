@@ -26,6 +26,11 @@ function formatDZD(amount) {
   return Number(amount).toLocaleString('fr-FR') + ' DZD';
 }
 
+// TEMP: backend not implemented yet — QR codes always point to this fixed
+// demo rental (see MOCK_RENTALS in RentalPage.jsx) so the link works from any
+// device (client's phone), not just the admin's browser/localStorage.
+const DEMO_QR_UUID = 'demo-1234';
+
 const EMPTY_FORM = {
   customerName: '',
   customerPhone: '',
@@ -75,7 +80,9 @@ export default function AdminPage() {
       createdAt: new Date().toISOString(),
     };
     addRental(rental);
-    const url = `${window.location.origin}/rental/${uuid}`;
+    // Real per-rental QR link — re-enable once backend persistence works cross-device.
+    // const url = `${window.location.origin}/rental/${uuid}`;
+    const url = `${window.location.origin}/rental/${DEMO_QR_UUID}`;
     setQrUrl(url);
     setCreatedRental(rental);
     setRentals(getRentals());
@@ -91,7 +98,9 @@ export default function AdminPage() {
     const updated = allRentals.filter(r => r.uuid !== requestUUID);
     updated.push(approved);
     saveRentals(updated);
-    const url = `${window.location.origin}/rental/${newUUID}`;
+    // Real per-rental QR link — re-enable once backend persistence works cross-device.
+    // const url = `${window.location.origin}/rental/${newUUID}`;
+    const url = `${window.location.origin}/rental/${DEMO_QR_UUID}`;
     setQrUrl(url);
     setCreatedRental(approved);
     setRentals(updated);

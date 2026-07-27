@@ -1,11 +1,11 @@
 import { useState, useRef } from "react";
 import { categories } from "../data/cars";
-import suvImg from "../assets/categories/suv.jpg";
-import berlineImg from "../assets/categories/berline.jpg";
-import sportImg from "../assets/categories/sport.jpg";
-import luxeImg from "../assets/categories/luxe.jpg";
-import electriqueImg from "../assets/categories/electrique.jpg";
-import pickupImg from "../assets/categories/pickup.jpg";
+import suvImg from "../assets/categories/suv_wobg.PNG";
+import berlineImg from "../assets/categories/berline_wobg.PNG";
+import sportImg from "../assets/categories/sport_wobg.PNG";
+import luxeImg from "../assets/categories/lux_wobg.png";
+import electriqueImg from "../assets/categories/electric_wobg.png";
+import pickupImg from "../assets/categories/pickup_wobg.png";
 import "./Categories.css";
 
 const categoryDetails = {
